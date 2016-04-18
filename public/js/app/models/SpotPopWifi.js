@@ -125,7 +125,11 @@ define([
 
                                  for (var scount = 0; scount < spots.length; scount++) {
                                   var spot = spots[scount];
-                                  var spot_location = {lat: spot.location[0], lng: spot.location[1]};
+                                  var spot_location = {lat: 0, lng: 0};
+
+                                  if (spot.location && spot.location[0]) {
+                                     spot_location = {lat: spot.location[0], lng: spot.location[1]};
+                                  }
                                   markers[scount] = new google.maps.Marker(
                                   {
                                       map: map,
@@ -195,7 +199,11 @@ define([
 
                                  for (var scount = 0; scount < spots.length; scount++) {
                                   var spot = spots[scount];
-                                  var spot_location = {lat: spot.location[0], lng: spot.location[1]};
+                                  var spot_location = {lat: 0, lng: 0};
+
+                                  if (spot.location && spot.location[0]) {
+                                     spot_location = {lat: spot.location[0], lng: spot.location[1]};
+                                  }
                                   markers[scount] = new google.maps.Marker(
                                   {
                                       map: map,
