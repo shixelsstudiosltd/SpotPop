@@ -20,7 +20,7 @@ define(['jquery', 'hbs!templates/spotnav', 'backbone','models/Model', 'marionett
                 var isLiked = false;
 
 
-                if (this.spot.user_id === user) {
+                if (this.spot.owner === user) {
                     showEdit = true;
                 } else {
                     if (user_likes) {

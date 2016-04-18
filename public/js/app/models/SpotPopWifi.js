@@ -256,7 +256,7 @@ define([
       showmyspots: function(where) {
 
           var spotsClass = "Spots";
-          var filter = {sort_asc: 'created_at', 'user_id': spotpop.api.users.id()};
+          var filter = {sort_asc: 'created_at', 'owner': spotpop.api.users.id()};
           var params = { 'email': "fara@shixels.com", 'password': "BwSH7q1QF7wK"};
           var self = this;
           spotpop.qb.createSession(function(err, result){
@@ -474,8 +474,8 @@ define([
       var filter2 = null;
 
       if (type === 'mine') {
-        filter = {sort_asc: 'created_at', 'user_id': spotpop.api.users.id(), business: {ctn: term}};
-        filter2 = {sort_asc: 'created_at', 'user_id': spotpop.api.users.id(), ssid: {ctn: term}};
+        filter = {sort_asc: 'created_at', 'owner': spotpop.api.users.id(), business: {ctn: term}};
+        filter2 = {sort_asc: 'created_at', 'owner': spotpop.api.users.id(), ssid: {ctn: term}};
       }
 
       if (type === 'all') {

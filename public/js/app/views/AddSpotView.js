@@ -35,7 +35,7 @@ define(['jquery', 'hbs!templates/addspot', 'backbone','models/Model', 'marionett
                 spot.good_for_working = parseInt($('.work-toggle .active').data('gfw'));
                 spot.speed = parseInt($('.speed-toggle .active').data('speed'));
                 spot.outlets = parseInt($('.outlet-toggle .active').data('outlets'));
-                spot.user_id = parseInt(spotpop.api.users.current().id);
+                spot.owner = parseInt(spotpop.api.users.current().id);
                 spot.location = window.spotpop.latlng;
                 spot.pops = 0;
                 spot.stops = 0;
@@ -47,7 +47,7 @@ define(['jquery', 'hbs!templates/addspot', 'backbone','models/Model', 'marionett
                     spot.is_public = true;
                 }
 
-                if (spot && spot.business && spot.user_id) {
+                if (spot && spot.business && spot.owner) {
                    $('.add-wait').removeClass('hide');
                     console.log(spot);
                     spotpop.api.wifi.addspot(spot);
