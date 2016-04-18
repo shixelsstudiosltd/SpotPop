@@ -22,7 +22,7 @@ function ($, template, Backbone, Model) {
         signup: function(e) {
             this.regform = spotpop.api.core.getFormObj('.register-form');
 
-            if (this.regform.login && this.regform.password && (this.regform.password === this.regform.rpassword) && (this.regform.password.length > 8)) {
+            if (this.regform.login && this.regform.password && (this.regform.password === this.regform.rpassword) && (this.regform.password.length > 7)) {
                 $('.register-wait').removeClass('hide');
                 this.regform = {
                     login: this.regform.login,
@@ -33,7 +33,7 @@ function ($, template, Backbone, Model) {
                 $('.register-error').html('<p class="orange bold">Passwords must match!</p>');
             } else if (this.regform.password.length < 8) {
                 $('.register-error').html('<p class="orange bold">Password must be at least 8 characters!</p>');
-            } else {
+            } else if (!this.regform.login || !this.regform.password || !this.regform.rpassword){
                 $('.register-error').html('<p class="orange bold">Please Fill in all fields!</p>');
             }
         },
