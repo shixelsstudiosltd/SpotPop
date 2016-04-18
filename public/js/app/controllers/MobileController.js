@@ -49,16 +49,23 @@ define([
     ForgotView
     ){
     return Backbone.Marionette.Controller.extend({
-        initialize:function (options) {        
-        },
-        index:function () {
-            spotpop.fullRegion.show(new SplashView()); 
+        initialize:function (options) {    
         },
         login: function() {
-            spotpop.fullRegion.show(new LoginView());
+            if (spotpop.api.users.session()){
+                window.location.hash = '#map';
+            } else {
+                spotpop.fullRegion.show(new LoginView());  
+            }
+            
         },
         register: function() {
-            spotpop.fullRegion.show(new RegisterView());
+             if (spotpop.api.users.current()){
+                window.location.hash = '#map';
+            } else {
+                spotpop.fullRegion.show(new RegisterView());
+            }
+            
         },
         map: function() {
             spotpop.api.users.session();
@@ -127,6 +134,14 @@ define([
         },
         forgot: function() {
             spotpop.fullRegion.show(new ForgotView());
+        },
+        logout: function() {
+            spotpop.qb.logout(function(err, result){});
+            if (spotpop.api.users.session()){
+                window.location.hash = '#map';
+            } else {
+                spotpop.fullRegion.show(new LoginView());  
+            }
         }
      });
 });

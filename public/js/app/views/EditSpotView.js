@@ -27,7 +27,6 @@ define(['jquery', 'hbs!templates/editspot', 'backbone','models/Model', 'marionet
                 if (this.spot.speed === 2) {
                     isFast = true;
                 }
-                console.log(this.spot);
                 this.model = new Model({spot: this.spot, isSlow: isSlow, isMed: isMed, isFast: isFast});
             },
             onRender: function () {
@@ -64,7 +63,6 @@ define(['jquery', 'hbs!templates/editspot', 'backbone','models/Model', 'marionet
 
                 if (spot && spot.business && spot.owner) {
                    $('.add-wait').removeClass('hide');
-                    console.log(spot);
                     spotpop.api.wifi.savespot(spot);
                 } else {
                     alert('please fill in all required fields!');

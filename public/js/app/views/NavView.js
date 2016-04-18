@@ -76,7 +76,6 @@ define(['jquery', 'hbs!templates/nav', 'backbone','models/Model', 'marionette'],
                                 self.shownav(e);
                             }
                         });
-
                         if (location === '#map') {
                             self.initAutocomplete();   
                         }

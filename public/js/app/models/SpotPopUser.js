@@ -18,27 +18,44 @@ define([
 
       },
       register: function(params) {
-        spotpop.qb.users.create(params, function(err, user){
-          if (user) {
-            // success
-            $('.register-wait').addClass('hide');
-            $('.register-success').removeClass('hide');
-            
-          } else  {
-            // error
-            $('.register-error-mess').removeClass('hide');
+        var sparams = { 'email': "fara@shixels.com", 'password': "BwSH7q1QF7wK"};
+
+          spotpop.qb.createSession(function(err,result){
+            if (!err) {
+              spotpop.qb.login(sparams, function(err, user){
+                if (user) {
+                    spotpop.qb.users.create(params, function(err, user){
+                      if (user) {
+                        // success
+                        $('.register-wait').addClass('hide');
+                        $('.register-success').removeClass('hide');
+                        
+                      } else  {
+                        // error
+                        $('.register-error-mess').removeClass('hide');
+                      }
+                    });
+                  }
+                });
           }
         });
+        
       },
-      login: function(params) {
+      login: function(params, isFirst) {
         spotpop.qb.createSession(function(err, result){
           if (result) {
             // success
             spotpop.qb.login(params, function(err, user){
               if (user) {
                   localStorage.sp_user = JSON.stringify(user);
-                  spotpop.appRouter.navigate('map', {trigger: true});
-                  window.location.reload();
+                  if (!isFirst) {
+                    spotpop.appRouter.navigate('map', {trigger: true});
+                    window.location.reload();
+                  } else {
+                    spotpop.appRouter.navigate('my-account', {trigger: true});
+                    window.location.reload();
+                  }
+                  
               } else {  
                  $('.login-wait').addClass('hide');
                 $('.login-error').html('<p class="orange bold">Incorrect Username or Password!</p>');
@@ -98,19 +115,11 @@ define([
             }
       }, 
       logout: function() {
-            spotpop.qb.logout(function(err, result){
-              if (result) {
-                // success
-              } else {
-                // error
-                localStorage.removeItem('sp_user');
-                localStorage.removeItem('spot');
-                localStorage.removeItem('filters');
-                window.location.hash = '#login';
-                window.location.reload();
-              }
-            });
-            
+        localStorage.removeItem('sp_user');
+        localStorage.removeItem('spot');
+        localStorage.removeItem('filters');
+        window.location.hash = '#login?logout=true';
+        window.location.reload();
       },
       update: function(form) {
           var self = this;
@@ -172,6 +181,7 @@ define([
                           $('.forgot-wait').addClass('hide');
                           $('.forgot-email').val('');
                           $('.forgot-error').html('<i class="as-icon ionicons ion-checkmark green"></i> Reset Link Sent');
+                          $('.reset-password h3').html('<i class="as-icon ionicons ion-checkmark green"></i> Reset Link Sent');
                         if (err) {  
                           // error
                           $('.alert p').html('Password link not sent please try again!').removeClass('hide');

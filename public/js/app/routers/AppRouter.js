@@ -17,7 +17,8 @@ define(['backbone', 'marionette'], function(Backbone, Marionette) {
          "about": "about",
          "bugs": "bugs",
          "edit-spot": "editspot",
-         "forgot-password": "forgot"
+         "forgot-password": "forgot",
+         "login?logout=true": "logout"
        }
    });
 });
