@@ -1,0 +1,82 @@
+.help-view {
+	width: 100%;
+	height: 100%;
+	background: #F6F7F9;
+	overflow-y: scroll;
+	padding-bottom: 100px;
+	overflow-x: hidden !important;
+
+	h1 {
+		color: $orange;
+		 font-size: 100%;
+	    font-weight: 200;
+	    margin: 0;
+	    padding: 15px 0;
+	}
+	.as-icon {
+	    margin-right: 15px;
+	}
+	.as-arrow {
+	    position: absolute;
+	    right: 25px;
+	    padding-top: 3px;
+	}
+	.save-changes {
+		background:$orange;
+	    margin: 8%;
+	    margin-bottom: 10%;
+	    margin-top: 5% !important;
+	    padding: 15px;
+	    border-radius: 30px;
+	    color: $white;
+	    display: none;
+	    text-align: center;
+	    font-size: 120%;
+	}
+	.help-line {
+    	width: 100%;
+	    height: 75px;
+	    background: white;
+	    border-bottom: 1px solid $greyline;
+	    margin: 0;
+
+	    &.delete-help {
+	    	position: relative;
+		    h3 {
+		    	color: $red !important;
+		    	font-weight: 300;
+	    		padding-top: 25px;
+		    }
+		}
+	    &.first {
+	    	border-top: 1px solid $greyline;
+	    }
+
+	    &.settings {
+	    	position: relative;
+	    	h3 {
+	    		color: #A6B0C3;
+	    		font-weight: 300;
+	    		padding-top: 25px;
+	    	}
+	    }
+	    h2 {
+	    	margin: 0;
+	    	font-size: 90%;
+	    	padding: 15px;
+	    	font-weight: 400;
+	    	color: $orange;
+	    	padding-bottom: 0;
+	    	text-transform: uppercase;
+	    }
+
+	    h3 {
+		    margin: 0;
+		    padding: 0;
+		    padding-left: 15px;
+		    padding-top: 5px;
+		    font-size: 130%;
+		}
+	}
+
+}

@@ -1,0 +1,68 @@
+.spot-view {
+	width: 100%;
+	height: calc(100% - 165px);
+	background: $white; 
+	overflow-y: scroll;
+
+
+	.spot-line {
+	    padding-left: 15px;
+	    padding-top: 25px;
+	    position: relative;
+
+	    .pass-arrow {
+		    position: absolute;
+		    right: 25px;
+		    top: 3px;
+		    color: $orange;
+		}
+	}
+
+	.spot-rating {
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
+    font-size: 150%;
+
+	    i {
+	    font-size: 200%;
+	    padding-right: 15px;
+	    position: relative;
+	    top: 10px;
+		}
+	}
+
+	h4 {
+		font-size: 90%;
+	}
+	.toggle {
+    	border: 2px solid $orange;
+    	border-radius: 4px;
+    	height: 30px;
+    	line-height: 30px;
+    	text-align: center;
+    	margin-top: 10px;
+    	margin: 0 15px;
+    	margin-bottom: 25px;
+
+    	.middle {
+    		border-right: 2px solid $orange;
+    		border-left: 2px solid $orange;
+    	}
+
+    	.left {
+    		border-right: 2px solid $orange;
+    	}
+
+    	div {
+		    height: 100%;
+		    font-size: 80%;
+		    color: $orange;
+
+		    &.active {
+		    	background: $orange;
+		    	color: $white;
+		    }
+		}
+    }
+}

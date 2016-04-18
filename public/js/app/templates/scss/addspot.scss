@@ -1,0 +1,137 @@
+.add-spot-view {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(255,255,255,0.95);
+    top: 0;
+    z-index: 1000;
+    padding: 0 5%;  
+    overflow-y: scroll;
+
+    h1 {
+    	font-size: 150%;
+    	margin-top: -15px;
+    }
+
+    h4 {
+	    font-weight: 200;
+	    text-align: left;
+	    padding: 0 15px;
+	    font-size: 120%;
+    }
+    .add-spot-button {
+	    background:$orange;
+	    margin: 8%;
+	    margin-bottom: 10%;
+	    margin-top: 5% !important;
+	    padding: 15px;
+	    border-radius: 30px;
+	    color: $white;
+	    font-size: 120%;
+	}
+	.view-button {
+	    background:$orange;
+	    margin: 8%;
+	    margin-bottom: 10%;
+	    margin-top: 5% !important;
+	    padding: 15px;
+	    border-radius: 30px;
+	    color: $white;
+	    font-size: 70%;
+	    display: block;
+	}
+	.map-button {
+		background:$black;
+	    margin: 8%;
+	    margin-bottom: 10%;
+	    margin-top: 5% !important;
+	    padding: 15px;
+	    border-radius: 30px;
+	    color: $white;
+	    font-size: 70%;
+	    display: block;
+	}
+    .toggle {
+    	border: 2px solid $orange;
+    	border-radius: 4px;
+    	height: 30px;
+    	line-height: 30px;
+    	text-align: center;
+    	margin-top: 10px;
+    	margin: 0 15px;
+    	margin-bottom: 25px;
+
+    	.middle {
+    		border-right: 2px solid $orange;
+    		border-left: 2px solid $orange;
+    	}
+
+    	.left {
+    		border-right: 2px solid $orange;
+    	}
+
+    	div {
+		    height: 100%;
+		    font-size: 80%;
+		    color: $orange;
+
+		    &.active {
+		    	background: $orange;
+		    	color: $white;
+		    }
+		}
+    }
+
+    .add-close {
+	    font-size: 200%;
+	    position: absolute;
+	    left: 10%;
+	    top: 15px;
+	}
+
+	.add-spot-form {
+		.input-group {
+	    	margin: 5% 0;
+	    	width: 90%;
+	   		.input-group-addon {
+			    background: rgba(255,255,255,0.95);
+			    border: none;
+			    color: $orange;
+			    font-size: 150%;
+			    width: 50px;
+			}
+
+		
+
+	    	input {
+		    	border: 0;
+			    box-shadow: none;
+			    border-bottom: 2px solid $orange;
+			    border-radius: 0;
+			    font-size: 120%;
+			    font-weight: 200;
+			    width: 100%;
+			}
+		}
+	}
+	
+	.add-wait, .add-success {
+	    position: absolute;
+	    width: 100%;
+	    height: 100%;
+	    background: rgba(255,255,255,0.95);
+	    left: 0;
+	    top: 0;
+	    z-index: 100;
+	    color: $orange;
+	    padding-top: 30%;
+	    font-size: 200%;
+
+	    i {
+	    	display: block;
+	    	font-size: 250%;
+	    	margin-top: 5%;
+	    	margin-bottom: 10%;
+	    }
+	}
+}

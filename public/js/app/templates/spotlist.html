@@ -1,0 +1,14 @@
+<li class="spot-list-view">
+	<div class="view-spot">
+		<div class="col-xs-1"><img src="marker.png"></div>
+		<div class="col-xs-9">
+			<div class="col-xs-12"><h1>"{{spot.ssid}}" {{#unless spot.is_public}}<span class="spot-lock orange"><i class="ionicons ion-ios-locked"></i></span>{{/unless}}</h1></div>
+			<div class="col-xs-12"><p>{{spot.business}}</p></div>
+			<div class="col-xs-12"><p class="orange">{{spot.address}}</p></div>
+		</div>
+		<div class="col-xs-2">
+			<div class="pop-rating text-right green"><i class="ionicons ion-thumbsup"></i><strong class="uppercase">{{spot.pop_rating}}</strong></div>
+			<div class="stop-rating text-right red"><i class="ionicons ion-thumbsdown"></i><strong class="uppercase">{{spot.stop_rating}}</strong></div>
+		</div>
+	</div>
+</li>

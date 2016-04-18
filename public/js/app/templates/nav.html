@@ -1,0 +1,53 @@
+<div class="nav-view text-center">
+	<div class="nav-button col-xs-2"><i class="ionicons ion-navicon-round orange"></i></div>
+	<div class="col-xs-8">{{#if title}}<p class="title">{{{title}}}</p>{{else}}<img src="logo_small.png">{{/if}}</div>
+	<div class="col-xs-2">{{#if isRefresh}}<i class="{{#if isMap}}refresh-map{{/if}}{{#if isList}}refresh-list{{/if}}{{#if isMine}}refresh-spots{{/if}}{{#if isFaves}}refresh-faves{{/if}} ionicons ion-android-refresh orange"></i>{{else}}{{#if isAdd}}<i class="ionicons ion-plus add-spot orange"></i>{{/if}}{{#if isAccount}}<i class="edit-account ionicons ion-edit orange"></i>{{/if}}{{/if}}</div>
+	<div class="clear-fix"></div>
+	<div class="nav-search">
+		<div class="input-group col-xs-10">
+	      <div class="input-group-addon"><i class="ionicons ion-search"></i></div>
+	      <input type="text" class="form-control" id="nav-search" placeholder="Search...">
+	    </div>
+	    <div class="col-xs-2 show-filter">
+	    	<i class="ionicons ion-funnel"></i>
+	    </div>
+	</div>
+	<ul class="nav-menu">
+		<a href="#my-account"><li><i class="ionicons ion-android-contact"></i> My Account</li></a>
+		<a href="#my-spots"><li><i class="ionicons ion-home"></i> My Spots</li></a>
+		<a href="#my-faves"><li><i class="ionicons ion-android-favorite"></i> My Favourites</li></a>
+		<a href="#map"><li><i class="ionicons ion-map"></i> Spot Map</li></a>
+		<a href="#list"><li><i class="ionicons ion-android-list"></i> Spot List</li></a>
+		<a href="#search"><li><i class="ionicons ion-search"></i> Search Spots</li></a>
+		<a href="#help"><li><i class="ionicons ion-help-circled"></i> About &amp; Help</li></a>
+	</ul>
+	<ul class="filter-menu">
+		<li class="title">Filter Categories:</li>
+		<li class="filter-cat">
+			<div class="col-xs-2"><i class="ionicons ion-mouse"></i></div>
+			<div class="text-left col-xs-8">Good for Working?</div>
+			<div class="col-xs-2"><i class="filter-radio ionicons ion-android-radio-button-off"></i></div>
+		</li>
+		<li class="filter-cat">
+			<div class="col-xs-2"><i class="ionicons ion-outlet"></i></div>
+			<div class="text-left col-xs-8">Power Outlets?</div>
+			<div class="col-xs-2"><i class="filter-radio oinicons ion-android-radio-button-off"></i></div>
+		</li>
+		<li class="filter-cat">
+			<div class="col-xs-2"><i class="ionicons ion-flash"></i></div>
+			<div class="text-left col-xs-8">Internet Speed (SLOW)</div>
+			<div class="col-xs-2"><i class="filter-radio ionicons ion-android-radio-button-off"></i></div>
+		</li>
+		<li class="filter-cat">
+			<div class="col-xs-2"><i class="ionicons ion-flash"></i></div>
+			<div class="text-left col-xs-8">Internet Speed (MEDIUM)</div>
+			<div class="col-xs-2"><i class="filter-radio ionicons ion-android-radio-button-off"></i></div>
+		</li>
+		<li class="filter-cat">
+			<div class="col-xs-2"><i class="ionicons ion-flash"></i></div>
+			<div class="text-left col-xs-8">Internet Speed (FAST)</div>
+			<div class="col-xs-2"><i class="filter-radio ionicons ion-android-radio-button-off"></i></div>
+		</li>
+		<div class="apply-filters">Apply Filters</div>
+	</ul>
+</div>

@@ -1,0 +1,60 @@
+.bugs-view {
+
+	width: 100%;
+	height: 100%;
+	background: white;
+	text-align: center;
+	padding: 15% 10%;
+
+	.bug-success, .bug-overlay {
+		text-align: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.9);
+    margin: 0;
+    padding: 0 10%;
+    position: absolute;
+    left: 0;
+    padding-top: 19%;
+    font-size: 150%;
+
+    i {
+    	display: block;
+    	font-size: 300%;
+    	margin-bottom: 15px;
+    }
+}
+	h1 {
+		text-align: center;
+		font-size: 210%;
+		margin-bottom: 15px;
+		font-weight: bolder;
+	}
+
+	p {
+		font-size: 120%;
+		text-align: center;
+	}
+
+	textarea {
+		width: 100%;
+		margin: 0;
+		height: 200px !important;
+	}
+
+	.submit-bug, .done-bug{
+		width: 80%;
+    	font-size: 16px;
+	    height: 55px;
+	    background: $orange;
+	    line-height: 55px;
+	    text-align: center;
+	    color: $white;
+	    margin: 15px auto;
+	    margin-bottom: 25px;
+	    display: block;
+	    border: 0;
+    	border-radius: 30px;
+    	font-family: $primary_font !important;
+	}
+}

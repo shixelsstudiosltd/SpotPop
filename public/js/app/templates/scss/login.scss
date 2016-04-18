@@ -1,0 +1,136 @@
+.login-view {
+	width: 100%;
+	height: 100%;
+	background: $white;
+
+	.login-top {
+		width: 100%;
+    	height: 25%;
+    	background: url('obg.jpg');
+    	background-size: contain;
+    	text-align: center;
+
+    	.login-logo {
+		    width: 65%;
+		    padding: 5% 0;
+		}
+	}
+
+	.login-toggle {
+		width: 100%;
+		height: 70px;
+		background: $biege;
+
+		.col-xs-6 {
+		    text-align: center;
+		    line-height: 70px;
+		    font-size: 120%;
+		    font-weight: 200;
+
+		    &.active {
+		    	color: $orange;
+		    	font-weight: 400;
+		    	position: relative;
+
+		    	.active-arrow {
+				    position: absolute;
+				    bottom: -20px;
+				    color: white;
+				    left: 45%;
+				    font-size: 250%;
+				}
+
+		    }
+		}
+	}
+	.login-form {
+	    margin: 8%;
+	    margin-bottom: 0;
+
+	    input {
+		    height: 50px;
+		    border: 0;
+		    border-bottom: 2px solid $greyline;
+		    box-shadow: none;
+		   font-weight: 200;
+		    font-size: 120%;
+		}
+		.input-group {
+		    margin-bottom: 25px;
+		    height: 50px;
+		    width: 100%;
+		}
+		.input-group-addon {
+			width: 50px;
+		    padding: 12px 20px;
+		    background: white;
+		    border: 0;
+		    border-bottom: 2px solid $greyline;
+		    border-radius: 0;
+		    color: $greyline;
+		    font-size: 150%;
+		}
+	}
+
+	.signin-button {
+	    border: 2px solid $orange;
+	    margin: 8%;
+	    margin-bottom: 10%;
+	    margin-top: 0 !important;
+	    padding: 8px 15px;
+	    border-radius: 30px;
+	    color: $orange;
+	    font-size: 150%;
+	}
+
+	.facebook-button {
+	    background: $facebook_color;
+	    color: white;
+	    margin: 8%;
+	    margin-bottom: 5%;
+	    margin-top: -5%;
+	    padding: 10px 15px;
+	    border-radius: 30px;
+	    font-size: 150%;
+	}
+
+	a {
+		color: $orange;
+	}
+	.login-wait {
+	    position: absolute;
+	    width: 100%;
+	    height: 100%;
+	    background: rgba(255,255,255,0.9);
+	    z-index: 100;
+	    padding-top: 15%;
+	    margin: 0;
+	    left: 0;
+	    font-weight: 100;
+	    font-size: 180%;
+
+	    i {
+	    	display: block;
+	    	font-size: 200%;
+	    	padding: 10% 0;
+	    }
+	}
+	.login-success, .login-error-mess {
+	    position: absolute;
+	    width: 100%;
+	    height: 100%;
+	    background: rgba(255,255,255,0.9);
+	    z-index: 100;
+	    padding-top: 15%;
+	    margin: 0;
+	    left: 0;
+	    font-weight: 100;
+	    font-size: 180%;
+
+	    i {
+	    	display: block;
+	    	font-size: 300%;
+	    	padding: 5% 0;
+	    }
+	}
+}

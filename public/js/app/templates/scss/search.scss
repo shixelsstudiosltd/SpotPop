@@ -1,0 +1,56 @@
+.my-search-view {
+	width: 100%;
+	height: 100%;
+	height: calc(100% - 135px);
+	#my-search-list {
+	    width: 100%;
+	    height: 100%;
+	    overflow-y: scroll;
+	    padding-top: 75px;
+
+	    .loading-list {
+	    	padding-top: 30%;
+		    text-align: center;
+		    font-size: 200%;
+		    font-weight: 200;
+		}
+	}
+
+	.spot-list-view {
+	    width: 97%;
+	    height: 75px;
+	    overflow: hidden;
+	    border-bottom: 1px solid #EFEFEF;
+	    padding-top: 10px;
+    	margin: 0 auto;
+
+	    h1 {
+		    font-size: 120%;
+		    margin: 0;
+		    padding: 0;
+		    font-weight: bolder;
+		    font-style: italic;
+		    float: left;
+		    width: 70%;
+		}
+		p {
+		    font-size: 70%;
+		    padding-left: 6px;
+		    margin: 0;
+		    overflow: hidden;
+		    height: 15px;
+
+		}
+
+		.pop-rating, .stop-rating{
+		    width: 70px;
+		    position: relative;
+		    right: 40px;
+
+		    i {
+		    	margin-right: 8px;
+		    }
+		}
+	}
+
+}

@@ -1,0 +1,36 @@
+<div class="my-account-view">
+	<h1 class="fancy"><span>Your Profile</span></h1>
+	<div class="account-line first">
+		<h2>Username:</h2>
+		<h3 class="a_login" data-name="login">{{user.login}}</h3>
+	</div>
+	<div class="account-line">
+		<h2>Full Name:</h2>
+		<h3 class="a_full_name" data-name="full_name">{{user.full_name}}</h3>
+	</div>
+	<div class="account-line">
+		<h2>Phone Number:</h2>
+		<h3 class="a_phone" data-name="phone">{{user.phone}}</h3>
+	</div>
+	<div class="account-line">
+		<h2>Email Address:</h2>
+		<h3 class="a_email" data-name="email">{{user.email}}</h3>
+	</div>
+	<div class="save-changes">Save Changes</div>
+	<div class="account-settings">
+		<h1 class="fancy"><span>Profile Settings</span></h1>
+		<div class="reset-password account-line first settings">
+			<h3 class="settings-line"><i class="as-icon ionicons ion-android-lock"></i> Reset Password <i class="as-arrow ionicons ion-ios-arrow-right"></i></h3>
+		</div>
+		<div class="account-line settings logout-account">
+			<h3 class="settings-line"><i class="as-icon ionicons ion-log-out"></i> Logout <i class="as-arrow ionicons ion-ios-arrow-right"></i></h3>
+		</div>
+		
+
+		<!-- <h1 class="fancy"><span>Danger Zone</span></h1>
+		<div class="account-line first delete-account">
+			<h3><i class="as-icon ionicons ion-android-delete"></i> Delete Account <i class="as-arrow ionicons ion-ios-arrow-right"></i></h3>
+		</div> -->
+	</div>
+	<div class="alert alert-danger alert-dismissible fade in hide" role="alert"> <button type="button" class="close close-button" data-dismiss="alert" aria-label="Close" data-role="none"><span aria-hidden="true">×</span></button> <h4 class="xbold">Oh No!</h4> <p></p> <br> <button type="button" class="btn close-button btn-default" data-dismiss="alert" aria-label="Close" data-role="none">Okay</button> </div>
+</div>

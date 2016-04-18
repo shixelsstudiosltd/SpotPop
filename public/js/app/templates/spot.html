@@ -1,0 +1,51 @@
+<div class="spot-view">
+	<div class="spot-rating">
+		<div class="pop-rating col-xs-6 text-center green"><i class="ionicons ion-thumbsup"></i><strong class="uppercase pop-rating-p">{{spot.pop_rating}}</strong></div>
+		<div class="stop-rating col-xs-6 text-center red"><i class="ionicons ion-thumbsdown"></i><strong class="uppercase stop-rating-p">{{spot.stop_rating}}</strong></div>
+	</div>
+	<div class="spot-line">
+		<div class="spot-line-icon col-xs-1 orange"><i class="ionicons ion-ios-briefcase"></i></div>
+		<div class="spot-line-value col-xs-11">{{spot.business}}</div>
+		<div class="clear-fix"></div>
+	</div>
+	<div class="spot-line">
+		<div class="spot-line-icon col-xs-1 orange"><i class="ionicons ion-ios-location"></i></div>
+		<div class="spot-line-value col-xs-11">{{spot.address}}</div>
+		<div class="clear-fix"></div>
+	</div>
+	<div class="spot-line">
+		<div class="spot-line-icon col-xs-1 orange"><i class="ionicons ion-wifi"></i></div>
+		<div class="spot-line-value col-xs-11">{{spot.ssid}}</div>
+		<div class="clear-fix"></div>
+	</div>
+	<div class="spot-line">
+		<div class="spot-line-icon col-xs-1 orange"><i class="ionicons ion-locked"></i></div>
+		<div class="spot-line-value col-xs-11">{{#if spot.password}} Watch Ad to view password <i class="pass-arrow ionicons ion-ios-arrow-right"></i> {{else}} <strong class="green uppercase">public</strong> {{/if}}</div>
+		<div class="clear-fix"></div>
+	</div>
+	<div class="spot-line">
+		<div class="spot-line-icon col-xs-1 orange"><i class="ionicons ion-radio-waves"></i></div>
+		<div class="spot-line-value col-xs-11">{{spot.carrier}}</div>
+		<div class="clear-fix"></div>
+	</div>
+	<div class="spot-line">
+	 	<h4><i class="orange ionicons ion-mouse"></i> Good for working?</h4>
+	    <div class="work-toggle toggle">
+	    	<div class="col-xs-6 left {{#if spot.good_for_working}}active{{/if}}">Yes</div>
+	    	<div class="col-xs-6 {{#unless spot.good_for_working}}active{{/unless}}">No</div>
+	    </div>
+	    <div class="clear-fix"></div>
+	    <h4><i class="orange ionicons ion-flash"></i> Internet Speed</h4>
+	    <div class="speed-toggle toggle">
+	    	<div class="col-xs-4 {{#if spot.is_slow}}active{{/if}}">Slow</div>
+	    	<div class="col-xs-4 {{#if spot.is_med}}active{{/if}} middle">Medium</div>
+	    	<div class="col-xs-4 {{#if spot.is_fast}}active{{/if}}">Fast</div>
+	    </div>
+	    <div class="clear-fix"></div>
+	    <h4><i class="orange ionicons ion-outlet"></i> Power Outlets?</h4>
+	    <div class="outlet-toggle toggle">
+	    	<div class="col-xs-6 left {{#if spot.outlets}}active{{/if}}">Yes</div>
+	    	<div class="col-xs-6 {{#unless spot.outlets}}active{{/unless}}">No</div>
+	    </div>
+	</div>
+</div>
