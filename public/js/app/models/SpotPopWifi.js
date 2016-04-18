@@ -43,7 +43,7 @@ define([
                             alert('error adding spot! - ' + JSON.stringify(err));
                         } else {
                             custom_data.spots.push(res.id);
-                            spotpop.qb.users.update(spotpop.api.users.current()._id, {custom_data: JSON.stringify(custom_data)}, function(err2, user){
+                            spotpop.qb.users.update(spotpop.api.users.current().id, {custom_data: JSON.stringify(custom_data)}, function(err2, user){
                               if (user) {
                                 // success 
                                 $('.add-wait').addClass('hide');
