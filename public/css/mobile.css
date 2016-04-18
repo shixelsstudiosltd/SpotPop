@@ -4925,7 +4925,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .login-view {
   width: 100%;
   height: 100%;
-  background: #fff; }
+  background: #fff;
+  overflow-y: scroll; }
   .login-view .login-top {
     width: 100%;
     height: 25%;
@@ -5031,7 +5032,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .register-view {
   width: 100%;
   height: 100%;
-  background: #fff; }
+  background: #fff;
+  overflow-y: scroll; }
   .register-view .register-top {
     width: 100%;
     height: 25%;
@@ -5529,7 +5531,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .list-view {
   width: 100%;
   height: 100%;
-  height: calc(100% - 135px); }
+  height: calc(100% - 135px);
+  overflow-y: scroll; }
   .list-view #spotpop-list {
     width: 100%;
     height: 100%;
@@ -5636,7 +5639,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .my-spots-view {
   width: 100%;
   height: 100%;
-  height: calc(100% - 135px); }
+  height: calc(100% - 135px);
+  overflow-y: scroll; }
   .my-spots-view #my-spots-list {
     width: 100%;
     height: 100%;
@@ -5678,7 +5682,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .my-faves-view {
   width: 100%;
   height: 100%;
-  height: calc(100% - 135px); }
+  height: calc(100% - 135px);
+  overflow-y: scroll; }
   .my-faves-view #my-faves-list {
     width: 100%;
     height: 100%;
@@ -5720,7 +5725,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .my-search-view {
   width: 100%;
   height: 100%;
-  height: calc(100% - 135px); }
+  height: calc(100% - 135px);
+  overflow-y: scroll; }
   .my-search-view #my-search-list {
     width: 100%;
     height: 100%;
@@ -5992,7 +5998,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .forgot-view {
   width: 100%;
   height: 100%;
-  background: #fff; }
+  background: #fff;
+  overflow-y: scroll; }
   .forgot-view .forgot-top {
     width: 100%;
     height: 25%;

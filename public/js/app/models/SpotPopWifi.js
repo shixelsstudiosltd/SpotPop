@@ -237,7 +237,12 @@ define([
                             $(where).html('');
                             for (var scount = 0; scount < spots.length; scount++) {
                                   var spot = spots[scount];
-                                  var spot_location = {lat: spot.location[0], lng: spot.location[1]};
+                                  var spot_location = {lat: 0, lng: 0};
+
+                                  if (spot.location && spot.location[0]) {
+                                     spot_location = {lat: spot.location[0], lng: spot.location[1]};
+                                  }
+                                  
                                   var spotlist = new SpotListView({spot: spot});
 
                                     $(where).prepend(spotlist.render().el);
