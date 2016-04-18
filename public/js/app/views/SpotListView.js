@@ -20,6 +20,8 @@ define(['jquery', 'hbs!templates/spotlist', 'backbone','models/Model', 'marionet
                     this.spot.stop_rating = ((parseInt(this.spot.stops) / parseInt(totalrating)) * 100).toFixed(2) + '%';
                     this.spot.pop_rating = ((parseInt(this.spot.pops) / parseInt(totalrating)) * 100).toFixed(2) + '%';
                 }
+
+                this.spot.ssid_short = spotpop.api.core.truncate(this.spot.ssid, 7);
                 this.model = new Model({spot: this.spot});
             },
             onRender: function () {

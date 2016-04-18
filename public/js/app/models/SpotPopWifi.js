@@ -307,7 +307,7 @@ define([
                             res.pop_rating = ((parseInt(res.pops) / parseInt(total)) * 100).toFixed(2) + '%';
                             res.stop_rating =((parseInt(res.stops) / parseInt(total)) * 100).toFixed(2)  + '%';
 
-                            $('.stop-rating').html(res.stop_rating);
+                            $('.stop-rating-p').html(res.stop_rating);
                             $('.pop-rating-p').html(res.pop_rating);
                           }
                           

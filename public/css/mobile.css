@@ -5227,7 +5227,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     position: absolute;
     top: 85px;
     border-radius: 4px;
-    padding-bottom: 2px; }
+    padding-bottom: 6px; }
     .nav-view .nav-search .col-xs-2 {
       margin: 0;
       padding: 0;
@@ -5325,6 +5325,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   top: 0;
   z-index: 1000;
   padding: 0 5%;
+  padding-bottom: 100px;
   overflow-y: scroll; }
   .add-spot-view h1 {
     font-size: 150%;
@@ -5451,6 +5452,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   height: calc(100% - 165px);
   background: #fff;
   overflow-y: scroll; }
+  .spot-view .col-xs-10 {
+    margin: 0;
+    padding: 0; }
   .spot-view .spot-line {
     padding-left: 15px;
     padding-top: 25px;
@@ -5463,8 +5467,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   .spot-view .spot-rating {
     width: 100%;
     height: 75px;
-    line-height: 75px;
-    font-size: 150%; }
+    line-height: 100px;
+    font-size: 130%; }
     .spot-view .spot-rating i {
       font-size: 200%;
       padding-right: 15px;
@@ -5558,7 +5562,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
       overflow: hidden;
       height: 15px; }
     .list-view .spot-list-view .pop-rating, .list-view .spot-list-view .stop-rating {
-      width: 70px;
+      width: 80px;
       position: relative;
       right: 40px; }
       .list-view .spot-list-view .pop-rating i, .list-view .spot-list-view .stop-rating i {
@@ -5665,7 +5669,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
       overflow: hidden;
       height: 15px; }
     .my-spots-view .spot-list-view .pop-rating, .my-spots-view .spot-list-view .stop-rating {
-      width: 70px;
+      width: 80px;
       position: relative;
       right: 40px; }
       .my-spots-view .spot-list-view .pop-rating i, .my-spots-view .spot-list-view .stop-rating i {
@@ -5707,9 +5711,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
       overflow: hidden;
       height: 15px; }
     .my-faves-view .spot-list-view .pop-rating, .my-faves-view .spot-list-view .stop-rating {
-      width: 70px;
+      width: 80px;
       position: relative;
-      right: 40px; }
+      right: 25px; }
       .my-faves-view .spot-list-view .pop-rating i, .my-faves-view .spot-list-view .stop-rating i {
         margin-right: 8px; }
 
@@ -5886,6 +5890,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   top: 0;
   z-index: 1000;
   padding: 0 5%;
+  padding-bottom: 100px;
   overflow-y: scroll; }
   .edit-spot-view h1 {
     font-size: 150%;

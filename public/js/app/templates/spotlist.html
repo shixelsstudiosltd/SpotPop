@@ -1,8 +1,8 @@
 <li class="spot-list-view">
 	<div class="view-spot">
 		<div class="col-xs-1"><img src="marker.png"></div>
-		<div class="col-xs-9">
-			<div class="col-xs-12"><h1>"{{spot.ssid}}" {{#unless spot.is_public}}<span class="spot-lock orange"><i class="ionicons ion-ios-locked"></i></span>{{/unless}}</h1></div>
+		<div class="col-xs-8">
+			<div class="col-xs-12"><h1>"{{{spot.ssid_short}}}" {{#unless spot.is_public}}<span class="spot-lock orange"><i class="ionicons ion-ios-locked"></i></span>{{/unless}}</h1></div>
 			<div class="col-xs-12"><p>{{spot.business}}</p></div>
 			<div class="col-xs-12"><p class="orange">{{spot.address}}</p></div>
 		</div>
