@@ -4929,7 +4929,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   .login-view .login-top {
     width: 100%;
     height: 25%;
-    background: url("obg.jpg");
+    background: url("../obg.jpg");
     background-size: contain;
     text-align: center; }
     .login-view .login-top .login-logo {
@@ -5035,7 +5035,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   .register-view .register-top {
     width: 100%;
     height: 25%;
-    background: url("obg.jpg");
+    background: url("../obg.jpg");
     background-size: contain;
     text-align: center; }
     .register-view .register-top .register-logo {
@@ -5245,7 +5245,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
       color: #ddd;
       font-size: 150%; }
   .nav-view .nav-menu {
-    background: url("menubg.jpg");
+    background: url("../menubg.jpg");
     width: 0;
     min-height: 1000px;
     position: absolute;
@@ -5991,7 +5991,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   .forgot-view .forgot-top {
     width: 100%;
     height: 25%;
-    background: url("obg.jpg");
+    background: url("../obg.jpg");
     background-size: contain;
     text-align: center; }
     .forgot-view .forgot-top .forgot-logo {
